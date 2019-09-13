@@ -15,15 +15,15 @@ public class Exemplo02 {
         //Imprime a pessoa
         for (Pessoa p : pessoas) {
             if (p != null) {
-                System.out.println("Nome: " + p.getNome() + " | " + "Idade: " + p.getIdade());
+                System.out.println("NOME: " + p.getNome() + "  " + "IDADE: " + p.getIdade());
 
             }
         }
     }
 
     public static Pessoa criarPessoa() {
-        String nome = ScannerUtil.pegarTexto("Digite o nome:");
-        int idade = ScannerUtil.pegarNumero("Digite a idade:");
+        String nome = ScannerUtil.pegarTexto("Digite o nome: ");
+        int idade = ScannerUtil.pegarNumero("Digite a idade: ");
         ScannerUtil.escreverLinha();
         return new Pessoa(nome, idade);
     }
