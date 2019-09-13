@@ -1,4 +1,4 @@
-package Util;
+﻿package Util;
 
 import java.util.Scanner;
 
@@ -17,11 +17,12 @@ public class ScannerUtil {
                 if (texto.isEmpty()) {
                     throw new Exception("Erro recuperar texto, tente novamente");
                 }
-                
+
                 erro = false;
                 break;
                 
             } catch (Exception e) {
+
                 erro = true;
                 System.err.println(e.getMessage());
             }
